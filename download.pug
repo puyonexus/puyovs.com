@@ -1,0 +1,46 @@
+extends _layout.pug
+
+block prepend menu
+    - var currentPage = '/download.pug'
+
+block content
+    h1 Download
+    .box
+        h2 Puyo Puyo VS 2
+        p Download the current entry in the Puyo Puyo VS series. Note that PuyoVS is still under development
+
+        a(class="btn btn-primary btn-download btn-xlarge", href="http://www.puyovs.net/files/PuyoVS2_b28.zip") Windows
+        ul(class="download-info unstyled")
+            li <strong>Version:</strong> Build 29</li>
+            li <strong>Size:</strong> 10MB</li>
+        hr
+
+        a(class="btn btn-primary btn-download btn-xlarge", href="http://www.puyovs.net/files/PuyoVS2_b29.dmg") Mac
+        ul(class='download-info unstyled')
+            li <em>Warning: Mac version does not have auto-update feature yet</em></li>
+            li <strong>Version:</strong> Build 29</li>
+            li <strong>Size:</strong> 11MB</li>
+        hr
+
+        a(class='btn btn-primary btn-download btn-xlarge', href='http://www.puyovs.net/files/puyovs_b29_lx64.tar.gz') Linux x64
+        | &nbsp;
+        a(class='btn btn-primary btn-download btn-xlarge', href='http://www.puyovs.net/files/puyovs_b29_lx86.tar.gz') Linux x86
+        ul(class='download-info unstyled')
+            li <em>Warning: Linux version does not have auto-update feature yet</em>
+            li <strong>Version:</strong> Build 29</li>
+            li <strong>Size:</strong> 4MB</li>
+        hr
+
+        h2 Additional Resources &amp; Mods
+        p Additional resources &amp; mods not listed below can be found on <a href="http://puyonexus.net/forum/viewtopic.php?f=7&t=2037">Puyo Nexus</a>.
+        table(class='table table-no-header')
+            tbody
+                tr
+                    <td style="vertical-align: middle;">Puyo Puyo!! 20th Anniversary Character Pack (with voices)</td>
+                    <td style="text-align: right;"><a class="btn" href="http://www.mediafire.com/?xa7b7djrklygkdc">Download</a></td>
+                tr
+                    <td style="vertical-align: middle;">Puyo Puyo!! 20th Anniversary Character Pack (without voices)</td>
+                    <td style="text-align: right;"><a class="btn" href="http://dl.dropbox.com/u/3851720/PuyoVS2/%5BPuyoVS%5D%20PP20%20Characters%20No%20Voices.zip">Download</a></td>
+
+    h1 Online Servers
+    p Connect to the server <strong>ds-net.jp</strong> to play online.

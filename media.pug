@@ -1,0 +1,20 @@
+extends _layout.pug
+
+block prepend menu
+    - var currentPage = '/media.pug'
+
+mixin screenshot(href, desc)
+    .span6
+        p
+            a(href=href)
+                img(src=href alt=desc)
+            br
+            =desc
+
+block content
+    h1 Screenshots
+    .row-fluid(style='text-align: center')
+        +screenshot("/images/screen1.png", desc="Play online against players from all over the world")
+        +screenshot("/images/screen2.png", desc="Customizable graphics")
+    .row-fluid(style='text-align: center')
+        +screenshot("/images/screen4.png", desc="Up to 10 players simultaneously")

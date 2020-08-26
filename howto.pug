@@ -1,0 +1,54 @@
+extends _layout.pug
+
+block prepend menu
+    - var currentPage = '/howto.pug'
+
+block content
+    h1 Registering an account
+    p.
+        After starting up Puyo Puyo VS, enter a name and password. Your name should contain ascii characters only and make sure to 
+        use a secure password. When you try to connect for the first time, you will be prompted to confirm your new account.
+
+    img(src='/images/register.png' alt='A screenshot showing the registration prompt window.')
+
+    p.
+        If you receive a message that your password is incorrect, but you have never logged in before, it means the username is 
+        already in use. Use a different username instead. Also note that you are allowed to create a maximum of 5 accounts.
+
+    p(class='well')
+        em Q: Why can't I use unicode, Japanese or a different character set in my username?
+        br
+        | A: Players log in from all over the world. They may or may not speak your native language. You are required to fill in a 
+        | name that is pronouncable (or at least readable) for any PPVS user.
+        br
+        br
+        em Q: How can I retrieve my password if I lost them?
+        br
+        | A: Passwords are securely stored on the server, noone can get to them. There is no reset function, so you will need to
+        | ask an admin to delete your account.
+
+    h1 How to play friendly matches
+    p If you want to play matches without being rated and/or play with custom rules, challenge someone from the lobby.
+    img(src='/images/challenge.png' alt='A screenshot showing a user being challenged in the Puyo Puyo VS lobby.')
+    p To edit the rules, open the settings dialog before challenging. You can challenge up to 10 players simultaneously.
+
+    h1 How to play ranked matches
+    p.
+        Open the ranked match window from the startup menu or from the matches tab. When the game window opens, 
+        wait a while until the server selects an opponent for you. After you play a best-of-x match, you will go 
+        back waiting for new opponents. You do not have to close the game window.</p>
+
+    h2 How you are ranked
+    p.
+        All players are ranked according to the <a href="http://www.glicko.net/glicko.html">Glicko2</a> rating system. This 
+        system is an extension of the Elo rating system. In a nutshell, the player's strength is determined not only by a single 
+        number (the rating), but also by a rating deviation. The rating deviation is a measure for how accurate your rating is. 
+        The lower the rating deviation, the more accurate your rating is. The rating deviation will go down when you play a lot and 
+        it will go up if you do not play. Please refer to the Glicko website for more details.</p>
+    p.
+        The Puyo VS Server implements the Glicko2 rating system with a few small modifications. In the Glicko system players 
+        are rated after a rating period (which could be like a day or a week). But in the interest of instant player gratification and 
+        easier implementation, the Puyo VS Server rates players after every match. A best-of-x match is played and the match is 
+        considered as a rating period. If your rating deviation is too high (more than 150), the server will show your rating as ???. 
+        It will take about 10 to 30 games to become a rated player. Your rating deviation will go up if you do not play within 
+        24 hours. It will take about a year for you to revert back to an unrated player.

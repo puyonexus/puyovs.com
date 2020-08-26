@@ -1,0 +1,146 @@
+body {
+	background: url('../images/noise.png') #F5F5F5;
+	line-height: 1.5;
+}
+
+h1, h2, h3, h4 {
+	font-weight: normal;
+}
+h1 + p {
+	margin-top: 9px;
+}
+
+a {
+	color: #0069D6;
+	text-decoration: none;
+}
+a:hover {
+	color: #00438A;
+	text-decoration: underline;
+}
+
+.btn-xlarge {
+  padding: 9px 20px;
+  font-size: 20px;
+  line-height: normal;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.btn-primary.btn-download {
+	margin-bottom: 9px;
+}
+
+.box {
+	border-radius: 5px;
+	background-color: #DDD;
+	background-color: rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	margin: 20px 0;
+}
+.box .table td,
+.box .table th {
+	border-color: #AAA;
+	border-color: rgba(0, 0, 0, 0.2);
+}
+
+.table-no-header tr:first-child td {
+	border-top: 0;
+}
+
+.warning {
+	color: #B94A48;
+	font-weight: bold;
+}
+
+#header-inner,
+#navbar-inner,
+#container,
+#footer {
+	width: 940px;
+	margin: 0 auto;
+}
+#header {
+	min-width: 980px;
+}
+#header-inner {
+	padding: 10px 20px;
+	height: 30px;
+}
+#container {
+	padding: 20px;
+}
+#footer {
+	padding: 0 20px;
+}
+#footer-inner {
+	padding: 20px 0;
+}
+
+#navbar {
+	background: url('../images/navbar_bg.png') repeat-x;
+	height: 40px;
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+	min-width: 720px;
+	position: relative;
+	z-index: 1;
+}
+#navbar-inner {
+	list-style: none;
+	padding: 0;
+	font: 13px/40px Helvetica, Arial, sans-serif;
+	margin: 0 auto;
+	max-width: 960px;
+	min-width: 720px;
+}
+#nav {
+	list-style: none;
+	height: 40px;
+}
+#nav li {
+	float: left;
+}
+#nav li a {
+	display: block;
+	padding: 0 12px;
+	line-height: 40px;
+}
+#nav li a:link, #nav a:visited {
+	color: #999;
+	text-decoration: none;
+}
+#nav li a:hover, #nav a:active, #nav li.selected a {
+	color: #FFF;
+}
+
+#header {
+	height: 90px;
+}
+#navbar-inner {
+	padding: 0 20px;
+	position: relative;
+}
+#logo {
+	position: absolute;
+	top: -40px;
+	background: url('../images/logo.png') no-repeat;
+	width: 100px;
+	height: 96px;
+}
+#nav {
+	margin-left: 120px;
+}
+#footer-inner {
+	border-top: 1px solid #CCC;
+	border-color: rgba(0, 0, 0, 0.2);
+	color: #999;
+	color: rgba(0, 0, 0, 0.4);
+	text-align: center;
+}
+
+#logo-big {
+	display: block;
+	margin: 0 auto;
+	width: 470px;
+	height: 241px;
+}

@@ -1,0 +1,31 @@
+-
+    var menuItems = [
+        { href: '/', name: 'Home' },
+        { href: '/download.pug', name: 'Download' },
+        { href: '/media.pug', name: 'Media' },
+        { href: '/howto.pug', name: 'How-to' },
+        { href: '/animation.pug', name: 'Animation' },
+        { href: '/about.pug', name: 'About' },
+        { href: '/links.pug', name: 'Links' },
+    ]
+
+mixin navitem(href, name, active)
+    if active
+        li(class='selected')
+            a(href=href)=name
+    else
+        li
+            a(href=href)=name
+
+mixin menu(active)
+    ul#nav
+        each menuItem in menuItems
+            +navitem(menuItem.href, menuItem.name, active == menuItem.href)
+
+#header
+    #header-inner
+    #navbar
+        #navbar-inner
+            #logo
+            block menu
+                +menu(currentPage || '/')

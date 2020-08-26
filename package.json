@@ -1,0 +1,20 @@
+{
+  "name": "puyovs.net",
+  "version": "1.0.0",
+  "description": "Site for Puyo Puyo VS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "parcel serve index.pug",
+    "build": "parcel build index.pug"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-asset-copier": "^1.1.0",
+    "pug": "^3.0.0",
+    "sass": "^1.26.10"
+  },
+  "assetsPath": "static"
+}
