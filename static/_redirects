@@ -1,7 +1,7 @@
 /index.php /
-/download.php /download
-/media.php /media
-/howto.php /howto
-/animation.php /animation
-/about.php /about
-/links.php /links
+/download.php /download.html
+/media.php /media.html
+/howto.php /howto.html
+/animation.php /animation.html
+/about.php /about.html
+/links.php /links.html
