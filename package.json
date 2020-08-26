@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "parcel serve index.pug",
-    "build": "parcel build index.pug"
+    "build": "parcel build index.pug 404.pug"
   },
   "author": "",
   "license": "ISC",

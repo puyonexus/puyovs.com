@@ -1,0 +1,18 @@
+extends _layout.pug
+
+block prepend menu
+    - var currentPage = '/404.pug'
+
+block content
+    h1 Page Not Found
+    p Unfortunately, the page or resource you have tried to visit does not exist.
+    h2 All Pages
+    p The following is a listing of all pages on the site.
+    ul
+        each menuItem in menuItems
+            li
+                a(href=menuItem.href)=menuItem.name
+    p If you are looking for a file, check out the <a href="/files/">files index</a>.
+    p.
+        <em>Still can't find what you're looking for?</em>
+        Consider <a href="https://github.com/puyonexus/puyovs.net/issues">filing an issue</a> to let us know.
