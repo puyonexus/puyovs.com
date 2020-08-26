@@ -3,6 +3,9 @@ extends _layout.pug
 block prepend menu
     - var currentPage = '/about.pug'
 
+block prepend title
+    = "About - "
+
 block content
     h1 About
     p.

@@ -3,6 +3,9 @@ extends _layout.pug
 block prepend menu
     - var currentPage = '/media.pug'
 
+block prepend title
+    = "Media - "
+
 mixin screenshot(href, desc)
     .span6
         p
