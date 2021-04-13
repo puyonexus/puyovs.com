@@ -1,6 +1,6 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/aa48f6f6-77d0-4291-b6c9-d2737e284251/deploy-status)](https://app.netlify.com/sites/puyovs-net/deploys)
 
-# PuyoVS.net Website
+# PuyoVS.com Website
 This is the source code for the Puyo VS website.
 
 ## Development
@@ -13,8 +13,8 @@ To install Node.JS on Windows or macOS, grab a package from the official [Node.J
 Once you have Node.JS installed and available to use, clone this repository. (You may use a GUI tool such as GitHub Desktop to do this.)
 
 ```sh
-git clone git@github.com:puyonexus/puyovs.net.git
-cd puyovs.net
+git clone git@github.com:puyonexus/puyovs.com.git
+cd puyovs.com
 ```
 
 Run `npm install` to install the dependencies.
@@ -31,4 +31,4 @@ npm run serve
 
 Success! You can now begin editing files and the changes should show up live in your local server. By default the local server will be available at [http://localhost:1234](http://localhost:1234), but check your console output to be sure.
 
-PuyoVS.net is written in the [Pug template language](https://pugjs.org/language/attributes.html) and uses [Parcel Bundler](https://parceljs.org/) version 1 for bundling and minification.
+PuyoVS.com is written in the [Pug template language](https://pugjs.org/language/attributes.html) and uses [Parcel Bundler](https://parceljs.org/) version 1 for bundling and minification.
