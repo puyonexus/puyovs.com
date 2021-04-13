@@ -1,4 +1,4 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/aa48f6f6-77d0-4291-b6c9-d2737e284251/deploy-status)](https://app.netlify.com/sites/puyovs-net/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/aa48f6f6-77d0-4291-b6c9-d2737e284251/deploy-status)](https://app.netlify.com/sites/puyovs-com/deploys)
 
 # PuyoVS.com Website
 This is the source code for the Puyo VS website.
