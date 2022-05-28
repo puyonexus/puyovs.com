@@ -24,3 +24,7 @@
 /files/PuyoVSServer_win32_2013-3-12.zip https://dl.puyovs.com/PuyoVSServer_win32_2013-3-12.zip
 /files/PuyoVSServer-win32_august2017.zip https://dl.puyovs.com/PuyoVSServer-win32_august2017.zip
 /files/PuyoVSServer-win32_july2017.zip https://dl.puyovs.com/PuyoVSServer-win32_july2017.zip
+http://puyovs.net/* https://puyovs.com/:splat 301!
+https://puyovs.net/* https://puyovs.com/:splat 301!
+http://www.puyovs.net/* https://puyovs.com/:splat 301!
+https://www.puyovs.net/* https://puyovs.com/:splat 301!
