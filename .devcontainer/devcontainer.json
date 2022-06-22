@@ -1,0 +1,21 @@
+{
+	"name": "Node.js",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"args": { "VARIANT": "16-bullseye" }
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": []
+		}
+	},
+	"remoteUser": "node",
+	"postStartCommand": "npm run serve",
+	"portsAttributes": {
+		"1234": {
+			"label": "Web server",
+			"onAutoForward": "notify"
+		}
+	},
+	"forwardPorts": [ 1234 ]
+}
