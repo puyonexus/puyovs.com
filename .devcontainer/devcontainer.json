@@ -10,7 +10,8 @@
 		}
 	},
 	"remoteUser": "node",
-	"postStartCommand": "npm run serve",
+	"postStartCommand": "npm i",
+	"postAttachCommand": "npm run serve",
 	"portsAttributes": {
 		"1234": {
 			"label": "Web server",
